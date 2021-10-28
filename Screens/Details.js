@@ -3,10 +3,11 @@ import React from 'react';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
-export function DetailsScreen() {
+
+export function SettingsScreen() {
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Details Screen</Text>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Settings!</Text>
         </View>
     );
 }

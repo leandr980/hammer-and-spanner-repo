@@ -3,21 +3,13 @@ import React from 'react';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
-export function HomeScreen({ navigation}) {
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+export function HomeScreen() {
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Home Screen</Text>
-
-            <Button
-                title="Go to Details"
-                onPress={() => navigation.navigate("Details")}
-            />
-
-            <Button
-                title="Go to Signature Screen"
-                onPress={() => navigation.navigate("Signature")}
-            />
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Home!</Text>
         </View>
     );
 }
